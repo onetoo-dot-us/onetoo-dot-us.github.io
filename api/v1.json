@@ -1,14 +1,1 @@
-{
-  "data": [
-    {
-      "uniqueIdentifiers": {
-        "description": "contributing entities"
-      }
-    },
-    {
-      "primaryKeyRecords": {
-        "description": "music collection"
-      }
-    }
-  ]
-}
+{"data":[{"endpoint":"uniqueIdentifiers.json","description":"contributing entities"},{"endpoint":"primaryKeyRecords.json","description":"music collection"},{"endpoint":"worksInProgress.json","description":"efforts"}]}
