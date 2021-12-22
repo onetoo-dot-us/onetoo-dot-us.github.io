@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "uniqueIdentifiers": {
+        "description": "contributing entities"
+      }
+    },
+    {
+      "primaryKeyRecords": {
+        "description": "music collection"
+      }
+    }
+  ]
+}
