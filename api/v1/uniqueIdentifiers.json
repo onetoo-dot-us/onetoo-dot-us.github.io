@@ -1,14 +1,1 @@
-{
-  "data": [
-    {
-      "chanarah": {
-        "name": "Chanarah"
-      }
-    },
-    {
-      "cidroOnetoo": {
-        "name": "Cidro Onetoo"
-      }
-    }
-  ]
-}
+{"data":[{"name":"Chanarah"},{"name":"Cidro Onetoo"}]}
