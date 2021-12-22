@@ -8,58 +8,58 @@
 
 **hook:**
 
-making coldplay\
-carry- okay\
-faking- olé\
-chasing...\
+making coldplay<br>
+carry- okay<br>
+faking- olé<br>
+chasing...<br>
 
-making coldplay\
-carry- okay\
-faking- olé\
-chasing Sōsuke\
+making coldplay<br>
+carry- okay<br>
+faking- olé<br>
+chasing Sōsuke<br>
 
-on a wave...\
-dashing on a wave...\
-dashing on them...\
-dashing on a wave...\
+on a wave...<br>
+dashing on a wave...<br>
+dashing on them...<br>
+dashing on a wave...<br>
 
-on a wave...\
-dashing on a wave...\
-dashing on them...\
-dashing on a wave...\
+on a wave...<br>
+dashing on a wave...<br>
+dashing on them...<br>
+dashing on a wave...<br>
 
 **verse:**
 
-what a game\
-spent the whole day throwing\
-and he didnt even know it\
-so i had to let him hold it\
+what a game<br>
+spent the whole day throwing<br>
+and he didnt even know it<br>
+so i had to let him hold it<br>
 
-what a save\
-from the front to the back\
-what a play\
-i dont front, i dont act\
-on the game\
-i'm just...\
+what a save<br>
+from the front to the back<br>
+what a play<br>
+i dont front, i dont act<br>
+on the game<br>
+i'm just...<br>
 
 **hook:**
 
-making coldplay\
-carry- okay\
-faking- olé\
-chasing...\
+making coldplay<br>
+carry- okay<br>
+faking- olé<br>
+chasing...<br>
 
-making coldplay\
-carry- okay\
-faking- olé\
-chasing Sōsuke\
+making coldplay<br>
+carry- okay<br>
+faking- olé<br>
+chasing Sōsuke<br>
 
-on a wave...\
-dashing on a wave...\
-dashing on them...\
-dashing on a wave...\
+on a wave...<br>
+dashing on a wave...<br>
+dashing on them...<br>
+dashing on a wave...<br>
 
-on a wave...\
-dashing on a wave...\
-dashing on them...\
-dashing on a wave...\
+on a wave...<br>
+dashing on a wave...<br>
+dashing on them...<br>
+dashing on a wave...<br>
