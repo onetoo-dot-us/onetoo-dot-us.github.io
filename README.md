@@ -1,5 +1,14 @@
 # onetoo-dot-us.github.io
 
+## endpoints
+
+https://onetoo-dot-us.github.io/api/v1.json
+https://onetoo-dot-us.github.io/api/v1/uniqueIdentifiers.json
+https://onetoo-dot-us.github.io/api/v1/primaryKeyRecords.json
+https://onetoo-dot-us.github.io/api/v1/worksInProgress.json
+
+## todo list
+
 - [ ] &nbsp;Find a place for lyrics
 
 ## lyrics
