@@ -4,6 +4,7 @@ import './App.css';
 import { pagesMapping, RoutingContext } from './contexts/Routing';
 import Home from './pages/Home/Home';
 import Repositories from './pages/Repositories/Repositories';
+import Header from './organisms/Header/Header';
 
 function App() {
   const { page } = useContext(RoutingContext);
@@ -11,7 +12,7 @@ function App() {
   return (
     <>
       <ConstructionSign />
-      <h1>Onetoo</h1>
+      <Header />
       {pagesMapping.home === page && <Home />}
       {pagesMapping.repositories === page && <Repositories />}{' '}
     </>
