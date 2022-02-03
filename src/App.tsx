@@ -1,9 +1,7 @@
 import { ConstructionSign } from '@onetoo-dot-us/react-library';
 import { useContext } from 'react';
 import './App.css';
-import { pagesMapping, RoutingContext } from './contexts/Routing';
-import Home from './pages/Home/Home';
-import Repositories from './pages/Repositories/Repositories';
+import { RoutingContext } from './contexts/Routing';
 
 function App() {
   const { page } = useContext(RoutingContext);
