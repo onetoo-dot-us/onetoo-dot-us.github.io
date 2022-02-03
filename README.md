@@ -1,3 +1,3 @@
 # Onetoo
 
-This website is currently under construction.
+Onetoo is a make-believe project that uses GitHub as a framework for project management.

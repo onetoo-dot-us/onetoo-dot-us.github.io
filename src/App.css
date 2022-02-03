@@ -1,0 +1,10 @@
+#root {
+  width: min(80ch, 80%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
