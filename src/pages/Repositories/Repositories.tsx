@@ -1,17 +1,16 @@
 import { pagesMapping } from '../../contexts/Routing';
-import useNavigate from '../../custom-hooks/useNavigate/useNavigate';
+import Link from '../../molecules/Link/Link';
 
+/**
+ * Repositories page that uses GitHub's Repositories page as a framework for a collection of projects.
+ *
+ * @returns Repositories page
+ */
 const Repositories = () => {
-  const { navigateTo } = useNavigate();
-
-  const onClick = () => {
-    navigateTo(pagesMapping.home);
-  };
-
   return (
     <>
       <div>Kumusta nagtaud repositories!</div>
-      <button onClick={onClick}>Navigate to home</button>
+      <Link href={pagesMapping.home}>Navigate to home</Link>
     </>
   );
 };
