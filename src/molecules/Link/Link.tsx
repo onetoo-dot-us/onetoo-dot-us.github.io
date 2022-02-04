@@ -1,5 +1,6 @@
 import React from 'react';
 import useNavigate from '../../custom-hooks/useNavigate/useNavigate';
+import './Link.css';
 
 interface ILinkProps {
   className?: string;
@@ -17,7 +18,7 @@ const Link = ({ className, href, children }: ILinkProps) => {
   };
 
   return (
-    <a className={className} href={href} onClick={onClick}>
+    <a className={`a--a ${className}`} href={href} onClick={onClick}>
       {children}
     </a>
   );

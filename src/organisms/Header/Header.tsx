@@ -1,6 +1,7 @@
 import { pagesMapping } from '../../contexts/Routing';
 import Link from '../../molecules/Link/Link';
 import './Header.css';
+import Ul from '../../atoms/Ul/Ul';
 
 const navLinks = [
   {
@@ -16,22 +17,24 @@ const navLinks = [
 const Header = () => {
   return (
     <div className='header--container'>
-      <div className='header--h1--container'>
-        <h1 className='header--h1'>Onetoo</h1>
-      </div>
-      <div className='header--nav--container'>
-        <nav className='header--nav'>
-          <ul className='header--nav--ul'>
-            {navLinks.map((link, index) => (
-              <li className='header--nav--li' key={index}>
-                <Link className='header--nav--link' href={link.url}>
-                  {link.text}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
+      <header className='header--header'>
+        <div className='header--h1--container'>
+          <h1 className='header--h1'>Onetoo</h1>
+        </div>
+        <div className='header--nav--container'>
+          <nav className='header--nav'>
+            <Ul>
+              {navLinks.map((link, index) => (
+                <li className='header--nav--li' key={index}>
+                  <Link className='header--nav--link' href={link.url}>
+                    {link.text}
+                  </Link>
+                </li>
+              ))}
+            </Ul>
+          </nav>
+        </div>
+      </header>
     </div>
   );
 };

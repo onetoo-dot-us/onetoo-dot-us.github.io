@@ -11,11 +11,7 @@
   color: white;
 }
 
-.header--nav--ul {
-  list-style: none;
-  padding: 0;
-}
-
-.header--nav--link {
+.header--nav--link,
+.a--a.header--nav--link {
   color: white;
 }
