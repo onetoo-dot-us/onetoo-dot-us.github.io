@@ -10,7 +10,6 @@ const Repositories = () => {
   return (
     <>
       <div>Kumusta nagtaud repositories!</div>
-      <Link href={pagesMapping.home}>Navigate to home</Link>
     </>
   );
 };

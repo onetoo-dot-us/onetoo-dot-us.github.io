@@ -1,0 +1,15 @@
+.home--summary--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home--summary {
+  width: 80%;
+  margin: 1rem 0;
+}
+
+.home--summary--span {
+  background-color: lightgray;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2.5px;
+}

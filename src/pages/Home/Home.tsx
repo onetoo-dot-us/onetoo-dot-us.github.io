@@ -1,5 +1,6 @@
-import { pagesMapping } from '../../contexts/Routing';
-import Link from '../../molecules/Link/Link';
+import './Home.css';
+import Www from '../../organisms/Www/Www';
+import { www } from './www';
 
 /**
  * Home page that uses GitHub's Overview page as a framework for a collection of biographical and project information.
@@ -8,10 +9,9 @@ import Link from '../../molecules/Link/Link';
  */
 const Home = () => {
   return (
-    <>
-      <div>Kumusta nagtaud taeng!</div>
-      <Link href={pagesMapping.repositories}>Navigate to repositories</Link>
-    </>
+    <div className='home--container'>
+      <Www what={www.what} />
+    </div>
   );
 };
 

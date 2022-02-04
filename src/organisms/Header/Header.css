@@ -1,0 +1,17 @@
+.header--container {
+  width: 100%;
+  background-color: black;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.header--h1 {
+  margin: 0;
+  color: white;
+}
+
+.header--nav--link,
+.a--a.header--nav--link {
+  color: white;
+}
