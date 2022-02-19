@@ -1,14 +1,15 @@
-import React, { useState, useMemo, createContext, SetStateAction } from 'react';
+import React, { createContext, useMemo, useState } from 'react';
 
 /**
- * Simple object used to set and identify pages in router.
+ * Simple object used to set and identify pages in router. Add a `key: value` pair to this object to create a new route.
  */
 export const pagesMapping = {
   home: '/',
   repositories: 'repositories',
+  project: 'project',
 };
 
-export const RoutingContext = createContext({
+export const RouterContext = createContext({
   page: pagesMapping.home,
   setPage: (page: string): any => page,
 });
@@ -39,7 +40,7 @@ const Router = ({ children }: IRouterProps) => {
   const value = useMemo(() => ({ page, setPage }), [page, setPage]);
 
   return (
-    <RoutingContext.Provider value={value}>{children}</RoutingContext.Provider>
+    <RouterContext.Provider value={value}>{children}</RouterContext.Provider>
   );
 };
 

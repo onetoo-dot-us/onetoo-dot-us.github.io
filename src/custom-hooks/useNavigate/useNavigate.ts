@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { RoutingContext } from '../../contexts/Routing';
+import { RouterContext } from '../../contexts/Router';
 
 const useNavigate = () => {
-  const { setPage } = useContext(RoutingContext);
+  const { setPage } = useContext(RouterContext);
 
   const navigateTo = (destination: string) => {
     setPage(destination);

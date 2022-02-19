@@ -1,4 +1,4 @@
-import { pagesMapping } from '../../contexts/Routing';
+import { pagesMapping } from '../../contexts/Router';
 import Link from '../../molecules/Link/Link';
 import './Header.css';
 import Ul from '../../atoms/Ul/Ul';
@@ -11,6 +11,10 @@ const navLinks = [
   {
     text: 'Repositories',
     url: pagesMapping.repositories,
+  },
+  {
+    text: 'Project',
+    url: pagesMapping.project,
   },
 ];
 
