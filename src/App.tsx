@@ -16,7 +16,7 @@ function App() {
       <Header />
       {pagesMapping.home === page && <Home />}
       {pagesMapping.repositories === page && <Repositories />}{' '}
-      {pagesMapping.repositories === page && <Project />}
+      {pagesMapping.project === page && <Project />}
     </>
   );
 }

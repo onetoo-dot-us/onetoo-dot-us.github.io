@@ -13,8 +13,8 @@ const navLinks = [
     url: pagesMapping.repositories,
   },
   {
-    text: 'Project',
-    url: pagesMapping.project,
+    text: 'Projects',
+    url: pagesMapping.projects,
   },
 ];
 

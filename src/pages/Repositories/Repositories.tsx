@@ -1,7 +1,7 @@
 import { ContentBox } from '@onetoo-dot-us/react-library';
 
 /**
- * Repositories page that uses GitHub's Repositories page as a framework for a collection of projects.
+ * Repositories page that uses GitHub's Repositories page as a framework for project file management.
  *
  * @returns Repositories page
  */

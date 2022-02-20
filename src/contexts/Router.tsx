@@ -6,7 +6,7 @@ import React, { createContext, useMemo, useState } from 'react';
 export const pagesMapping = {
   home: '/',
   repositories: 'repositories',
-  project: 'project',
+  projects: 'projects',
 };
 
 export const RouterContext = createContext({
