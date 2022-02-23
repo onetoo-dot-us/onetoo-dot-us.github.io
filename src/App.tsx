@@ -1,23 +1,16 @@
-import { ConstructionSign } from '@onetoo-dot-us/react-library';
-import { useContext } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { pagesMapping, RouterContext } from './contexts/Router';
-import Home from './pages/Home/Home';
-import Repositories from './pages/Repositories/Repositories';
 import Header from './organisms/Header/Header';
-import Project from './pages/Project/Project';
+import Home from './pages/Home/Home';
 
 function App() {
-  const { page } = useContext(RouterContext);
-
   return (
-    <>
-      <ConstructionSign />
+    <div className='app--div'>
       <Header />
-      {pagesMapping.home === page && <Home />}
-      {pagesMapping.repositories === page && <Repositories />}{' '}
-      {pagesMapping.project === page && <Project />}
-    </>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </div>
   );
 }
 
