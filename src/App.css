@@ -1,11 +1,3 @@
-#root {
-  width: min(80ch, 80%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container {
+.app--div {
   width: 100%;
-  margin-bottom: 1rem;
 }
