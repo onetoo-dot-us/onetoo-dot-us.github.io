@@ -1,3 +1,3 @@
 # Onetoo
 
-Onetoo is a make-believe project that uses GitHub as a framework for project management.
+Onetoo is an organization of whatever [cidro12](https://carlcidromero.github.io) has been up to lately-- typically making beats, playing Rocket League and coding.
