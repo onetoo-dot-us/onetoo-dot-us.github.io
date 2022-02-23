@@ -1,15 +1,14 @@
-.home--summary--container {
-  display: flex;
-  flex-direction: column;
+.home--div {
+  background-color: var(--secondary-color);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
-.home--summary {
-  width: 80%;
-  margin: 1rem 0;
+.home--p {
+  color: white;
 }
 
-.home--summary--span {
-  background-color: lightgray;
-  padding: 0.25rem 0.5rem;
-  border-radius: 2.5px;
+.home--p a {
+  color: white;
 }

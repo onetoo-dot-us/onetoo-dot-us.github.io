@@ -1,8 +1,7 @@
-.header--container {
+.header--div {
   width: 100%;
-  background-color: black;
+  background-color: var(--primary-color);
   padding: 1rem;
-  box-sizing: border-box;
   margin-bottom: 1rem;
 }
 
@@ -11,7 +10,10 @@
   color: white;
 }
 
-.header--nav--link,
-.a--a.header--nav--link {
+.header--link {
   color: white;
+}
+
+.header--link:active {
+  color: pink;
 }
