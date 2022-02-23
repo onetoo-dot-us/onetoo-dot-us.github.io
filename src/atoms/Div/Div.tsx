@@ -1,11 +1,24 @@
 import React from 'react';
+import './Div.css';
 
-const Div = ({
-  children,
-}: {
+interface IDivProps {
   children: React.ReactNode | React.ReactNode[];
-}) => {
-  return <div className='div--div'>{children}</div>;
+  row?: boolean;
+  className?: string;
+}
+
+const Div = ({ children, row, className }: IDivProps) => {
+  return (
+    <div
+      className={
+        row
+          ? `div--div__row${className ? ' ' + className : ''}`
+          : `div--div${className ? ' ' + className : ''}`
+      }
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Div;

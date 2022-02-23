@@ -1,15 +1,17 @@
-import { pagesMapping } from '../../contexts/Routing';
-import Link from '../../molecules/Link/Link';
-
 /**
- * Repositories page that uses GitHub's Repositories page as a framework for a collection of projects.
+ * Repositories page that uses GitHub's Repositories page as a framework for project file management.
  *
  * @returns Repositories page
  */
 const Repositories = () => {
   return (
     <>
-      <div>Kumusta nagtaud repositories!</div>
+      <div className='display-name--container'>
+        <h2 className='display-name--h2'>Cidro Onetoo</h2>
+      </div>
+      <div className='username--container'>
+        <span className='username--span'>cidro12</span>
+      </div>
     </>
   );
 };
