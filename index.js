@@ -1,7 +1,17 @@
 "use strict";
 
-function makeHrElements() {
-  function makeHrUnderHeader() {
+const everyArticle = document.querySelectorAll("article");
+
+const renderHrElement = makeHrElement();
+Object.values(renderHrElement).map((value) => {
+  if (typeof value === "function") {
+    value.call();
+  }
+});
+renderHrElement();
+
+function makeHrElement() {
+  function underHeader() {
     const header = document.querySelector("header");
     if (header) {
       const hr = document.createElement("hr");
@@ -9,7 +19,7 @@ function makeHrElements() {
     }
   }
 
-  function makeHrAboveFooter() {
+  function aboveFooter() {
     const footer = document.querySelector("footer");
     if (footer) {
       const hr = document.createElement("hr");
@@ -17,9 +27,8 @@ function makeHrElements() {
     }
   }
 
-  function makeHrAfterEveryArticle() {
-    const everyArticle = document.querySelectorAll("article");
-    if (everyArticle.length === 0) return;
+  function afterEveryArticle() {
+    if (everyArticle && everyArticle.length === 0) return;
 
     const main = document.querySelector("main");
     if (!main) return;
@@ -34,13 +43,8 @@ function makeHrElements() {
   }
 
   return {
-    makeHrUnderHeader,
-    makeHrAfterEveryArticle,
-    makeHrAboveFooter,
+    underHeader,
+    afterEveryArticle,
+    aboveFooter,
   };
 }
-
-const tada = makeHrElements();
-tada.makeHrAboveFooter();
-tada.makeHrAfterEveryArticle();
-tada.makeHrUnderHeader();
