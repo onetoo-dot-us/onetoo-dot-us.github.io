@@ -5,24 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
+    <script type="module" src="index.js" defer></script>
     <title>Onetoo</title>
   </head>
   <body>
-    <!-- trust me-- it's a feature, not a bug. -->
+    <!-- feature not a bug! -->
     <div
       class="sticky will-change-transform width-full top-28 bg-white opacity-9"
     >
-      <header>
+      <ghud-header>
         <h1>Onetoo</h1>
         <nav>
-          <ul class="flex gap-30-px list-style-type-none">
-            <li class=""><a href="/blog">Blog</a></li>
-            <li class=""><a href="/book">Book</a></li>
-            <li class=""><a href="/music">Music</a></li>
-          </ul>
+          <ghud-ul>
+            <li>
+              <a
+                href="/software/websites/onetoo-dot-us.github.io/blog/index.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="/software/websites/onetoo-dot-us.github.io/book/index.html"
+                >Book</a
+              >
+            </li>
+            <li>
+              <a
+                href="/software/websites/onetoo-dot-us.github.io/music/index.html"
+                >Music</a
+              >
+            </li>
+          </ghud-ul>
         </nav>
-      </header>
+      </ghud-header>
     </div>
     <main>
       <article>
