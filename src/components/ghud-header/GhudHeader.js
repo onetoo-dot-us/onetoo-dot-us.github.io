@@ -1,12 +1,16 @@
-module.exports = class GhudHeader extends HTMLElement {
+export default class GhudHeader extends HTMLElement {
+  static get tag() {
+    return "ghud-header";
+  }
+
   constructor() {
     super();
 
-    const shadowRoot = this.attachShadow({ mode: "open" });
-    const header = document.createElement("header");
+    this.attachShadow({ mode: "open" });
+    const slot = document.createElement("slot");
 
-    shadowRoot.append(header);
+    this.shadowRoot.append(slot);
   }
-};
+}
 
-customElements.define("ghud-header", GhudHeader);
+customElements.define(GhudHeader.tag, GhudHeader);
