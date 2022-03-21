@@ -1,1 +1,1 @@
-export { default as GhudHeader } from "./ghud-header/GhudHeader.js";
+export { default as GhudHeader } from "./ghud-header-organism/GhudHeaderOrganism.js";

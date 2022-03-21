@@ -1,6 +1,6 @@
-export default class GhudA extends HTMLElement {
+export default class GhudAElement extends HTMLElement {
   static get tag() {
-    return "ghud-a";
+    return "ghud-a-element";
   }
 
   static get observedAttributes() {
@@ -20,4 +20,4 @@ export default class GhudA extends HTMLElement {
   }
 }
 
-customElements.define(GhudA.tag, GhudA);
+customElements.define(GhudAElement.tag, GhudAElement);
