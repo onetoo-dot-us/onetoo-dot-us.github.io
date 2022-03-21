@@ -18,9 +18,15 @@ describe("GhudHeaderOrganism", () => {
     expect(_shadowRoot.querySelector("h1").textContent.includes(h1Text));
   });
 
-  it("constructs with slot element", async () => {
+  it("contains a slot element", async () => {
     const { _shadowRoot } = await TestUtils.render(GhudHeaderOrganism.tag);
 
     expect(_shadowRoot.querySelector("slot")).toBeTruthy();
+  });
+
+  it("contains a header element", async () => {
+    const { _shadowRoot } = await TestUtils.render(GhudHeaderOrganism.tag);
+
+    expect(_shadowRoot.querySelector("header")).toBeTruthy();
   });
 });

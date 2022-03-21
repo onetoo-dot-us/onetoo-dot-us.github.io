@@ -17,7 +17,10 @@ export default class GhudHeaderOrganism extends HTMLElement {
 
     const slot = document.createElement("slot");
 
-    this._shadowRoot.append(h1, slot);
+    const header = document.createElement("header");
+    header.append(h1, slot);
+
+    this._shadowRoot.append(header);
   }
 }
 

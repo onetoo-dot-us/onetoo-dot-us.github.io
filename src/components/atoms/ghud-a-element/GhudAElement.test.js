@@ -2,7 +2,7 @@ import GhudAElement from "./GhudAElement.js";
 import { TestUtils } from "../../../utilities/test-utils/test-utils.js";
 
 describe("GhudAElement", () => {
-  it("has an anchor element", async () => {
+  it("contains an anchor element", async () => {
     const { _shadowRoot } = await TestUtils.render(GhudAElement.tag);
     expect(_shadowRoot.querySelector("a")).toBeTruthy();
   });
