@@ -1,10 +1,13 @@
-document.title = "onetoo.us";
+(function createReusableHeader() {
+  const root = document.querySelector("div#root");
+  const header = document.createElement("header");
+  const h1 = document.createElement("h1");
 
-const root = document.querySelector("div#root");
-const header = document.createElement("header");
-const h1 = document.createElement("h1");
+  const anchor = document.createElement("a");
+  anchor.href = "/";
+  anchor.textContent = "Onetoo";
 
-h1.textContent = "Onetoo";
-
-header.append(h1);
-root.append(header);
+  h1.append(anchor);
+  header.append(h1);
+  root.append(header);
+})();
