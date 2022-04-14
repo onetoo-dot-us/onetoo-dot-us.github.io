@@ -1,0 +1,19 @@
+{
+  "name": "onetoo-dot-us.github.io",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onetoo-dot-us/onetoo-dot-us.github.io.git"
+  },
+  "author": "Carl 'Cid' Romero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onetoo-dot-us/onetoo-dot-us.github.io/issues"
+  },
+  "homepage": "https://github.com/onetoo-dot-us/onetoo-dot-us.github.io#readme"
+}
