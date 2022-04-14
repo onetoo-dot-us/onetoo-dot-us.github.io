@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/onetoo-dot-us/onetoo-dot-us.github.io/issues"
   },
-  "homepage": "https://github.com/onetoo-dot-us/onetoo-dot-us.github.io#readme"
+  "homepage": "https://github.com/onetoo-dot-us/onetoo-dot-us.github.io#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
