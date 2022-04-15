@@ -26,6 +26,16 @@ describe("onetoo-dl", () => {
 
         expect(dt).toBeTruthy();
       });
+
+      it("renders 'dt' attribute", () => {
+        const dt = "hello";
+
+        document.body.innerHTML = `<onetoo-dl dt=${dt}></onetoo-dl>`;
+
+        const component = document.body.querySelector("onetoo-dl");
+
+        expect(component.querySelector("dt").textContent).toEqual(dt);
+      });
     });
 
     describe("child dd", () => {
@@ -35,6 +45,55 @@ describe("onetoo-dl", () => {
         const dd = dl.querySelector("dd");
 
         expect(dd).toBeTruthy();
+      });
+
+      it("renders 'dd' attribute", () => {
+        const dd = "hello";
+
+        document.body.innerHTML = `<onetoo-dl dd=${dd}></onetoo-dl>`;
+
+        const component = document.body.querySelector("onetoo-dl");
+
+        expect(component.querySelector("dd").textContent).toEqual(dd);
+      });
+
+      describe("child a", () => {
+        it('exists if "ddLink" attribute provided', () => {
+          document.body.innerHTML = `<onetoo-dl dt='hello' dd='world' dd-link='/hello/world/'></onetoo-dl>`;
+
+          const component = document.body.querySelector("onetoo-dl");
+
+          expect(component.querySelector("a")).toBeTruthy();
+        });
+
+        it('does not exist if "ddLink" attribute is not provided', () => {
+          document.body.innerHTML = `<onetoo-dl dt='hello' dd='world'></onetoo-dl>`;
+
+          const component = document.body.querySelector("onetoo-dl");
+
+          expect(component.querySelector("a")).toBeFalsy();
+        });
+
+        it('renders "dd" attribute', () => {
+          document.body.innerHTML = `<onetoo-dl dt='hello' dd='world' dd-link='/hello/world/'></onetoo-dl>`;
+
+          const component = document.body.querySelector("onetoo-dl");
+
+          expect(component.querySelector("a").textContent).toEqual("world");
+        });
+
+        it('sets href to "ddLink" attribute', () => {
+          const baseUrl = "http://localhost";
+          const ddLink = "/hello/world/";
+
+          document.body.innerHTML = `<onetoo-dl dt='hello' dd='world' dd-link=${
+            baseUrl + ddLink
+          }></onetoo-dl>`;
+
+          const component = document.body.querySelector("onetoo-dl");
+
+          expect(component.querySelector("a").href).toEqual(baseUrl + ddLink);
+        });
       });
     });
   });

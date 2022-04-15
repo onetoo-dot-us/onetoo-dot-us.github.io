@@ -5,10 +5,6 @@
 import { OnetooRepository } from "./onetoo-repository";
 
 describe("onetoo-repository", () => {
-  function findComponent() {
-    return document.body.querySelector("onetoo-repository");
-  }
-
   it("exists in custom element registry", () => {
     expect(customElements.get(OnetooRepository.tag)).toBeTruthy();
   });
@@ -26,7 +22,7 @@ describe("onetoo-repository", () => {
 
       document.body.innerHTML = `<onetoo-repository name=${name}></onetoo-repository>`;
 
-      const component = findComponent();
+      const component = document.body.querySelector("onetoo-repository");
 
       expect(component.querySelector("h2").textContent).toEqual("hello");
     });
