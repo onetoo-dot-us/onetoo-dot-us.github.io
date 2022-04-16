@@ -5,6 +5,10 @@ export class OnetooHeader extends HTMLElement {
 
   constructor() {
     super();
+
+    const h1 = document.createElement('h1');
+
+    this.append(h1);
   }
 }
 
