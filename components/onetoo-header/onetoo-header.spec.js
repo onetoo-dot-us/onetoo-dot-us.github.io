@@ -2,10 +2,10 @@
  * @jest-environment jsdom
  */
 
-import { OnetooHeader } from "./onetoo-header";
-import { describe, it, expect } from "@jest/globals";
-describe("onetoo-header", () => {
-  it("is defined", () => {
+import { OnetooHeader } from './onetoo-header';
+import { describe, it, expect } from '@jest/globals';
+describe('onetoo-header', () => {
+  it('is defined', () => {
     expect(customElements.get(OnetooHeader.tag)).toBeTruthy();
   });
 
@@ -15,6 +15,6 @@ describe("onetoo-header", () => {
       const h1 = component.querySelector('h1');
 
       expect(h1).toBeTruthy();
-    })
-  })
+    });
+  });
 });

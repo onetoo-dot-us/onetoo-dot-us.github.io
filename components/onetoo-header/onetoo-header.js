@@ -1,6 +1,6 @@
 export class OnetooHeader extends HTMLElement {
   static get tag() {
-    return "onetoo-header";
+    return 'onetoo-header';
   }
 
   constructor() {

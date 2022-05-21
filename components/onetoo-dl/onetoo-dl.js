@@ -1,19 +1,19 @@
 export class OnetooDl extends HTMLElement {
   static get tag() {
-    return "onetoo-dl";
+    return 'onetoo-dl';
   }
 
   constructor() {
     super();
 
-    const dl = document.createElement("dl");
+    const dl = document.createElement('dl');
 
-    const dt = document.createElement("dt");
+    const dt = document.createElement('dt');
     dt.textContent = this.dt;
 
-    const dd = document.createElement("dd");
+    const dd = document.createElement('dd');
     if (this.ddLink) {
-      const anchor = document.createElement("a");
+      const anchor = document.createElement('a');
       anchor.textContent = this.dd;
       anchor.href = this.ddLink;
       dd.append(anchor);
@@ -27,15 +27,15 @@ export class OnetooDl extends HTMLElement {
   }
 
   get dt() {
-    return this.getAttribute("dt");
+    return this.getAttribute('dt');
   }
 
   get dd() {
-    return this.getAttribute("dd");
+    return this.getAttribute('dd');
   }
 
   get ddLink() {
-    return this.getAttribute("dd-link");
+    return this.getAttribute('dd-link');
   }
 }
 
