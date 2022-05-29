@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 
 interface NavProps {
+  showsSmallNav: boolean;
   smallNav: React.ReactNode;
+  toggleShowsSmallNav: () => void;
 }
 
-export default function Nav({ smallNav }: NavProps) {
-  const [showsSmallNav, setShowsSmallNav] = useState(false);
-
-  function handleClick() {
-    setShowsSmallNav(!showsSmallNav);
-  }
-
+export default function Nav({
+  showsSmallNav,
+  smallNav,
+  toggleShowsSmallNav,
+}: NavProps) {
   return (
     <nav>
       <ul>
         <li>
-          <span onClick={handleClick}>Consume</span>
+          <span onClick={toggleShowsSmallNav}>Content</span>
           {showsSmallNav && smallNav}
         </li>
       </ul>

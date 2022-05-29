@@ -1,56 +1,36 @@
-import Nav from '../../components/nav/nav.component';
 import React, { useState } from 'react';
-import AudioList from '../../features/stream-audio/audio-list/audio-list';
-import VideoList from '../../features/stream-video/video-list/video-list';
-import TextList from '../../features/view-text/text-list/text-list';
+import { Link, Outlet } from 'react-router-dom';
+import Nav from '../../components/nav/nav.component';
 
 export default function HomePage() {
-  const [showsAudioList, setShowsAudioList] = useState(false);
-  const [showsTextList, setShowsTextList] = useState(false);
-  const [showsVideoList, setShowsVideoList] = useState(false);
+  const [showsSmallNav, setShowsSmallNav] = useState(false);
 
   const smallNav = (
     <ul>
-      <li onClick={handleClickAudio}>Audio</li>
-      <li onClick={handleClickText}>Text</li>
-      <li onClick={handleClickVideo}>Video</li>
+      <li>
+        <Link to='listen' onClick={toggleShowsSmallNav}>
+          Audio
+        </Link>
+      </li>
+      <li>Text</li>
+      <li>Video</li>
     </ul>
   );
 
-  function handleClickAudio() {
-    setShowsAudioList(!showsAudioList);
-
-    if (showsAudioList) {
-      setShowsTextList(false);
-      setShowsVideoList(false);
-    }
-  }
-
-  function handleClickText() {
-    setShowsTextList(!showsTextList);
-
-    if (showsTextList) {
-      setShowsAudioList(false);
-      setShowsVideoList(false);
-    }
-  }
-
-  function handleClickVideo() {
-    setShowsVideoList(!showsVideoList);
-
-    if (showsVideoList) {
-      setShowsAudioList(false);
-      setShowsTextList(false);
-    }
+  function toggleShowsSmallNav() {
+    setShowsSmallNav(!showsSmallNav);
   }
 
   return (
     <>
-      <Nav smallNav={smallNav} />
+      This is the home page.
+      <Nav
+        showsSmallNav={showsSmallNav}
+        smallNav={smallNav}
+        toggleShowsSmallNav={toggleShowsSmallNav}
+      />
       <main>
-        {showsAudioList && <AudioList></AudioList>}
-        {showsTextList && <TextList></TextList>}
-        {showsVideoList && <VideoList></VideoList>}
+        <Outlet />
       </main>
     </>
   );
