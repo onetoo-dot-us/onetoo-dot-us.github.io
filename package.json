@@ -1,25 +1,21 @@
 {
-  "name": "onetoo-dot-us.github.io",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
+  "name": "onetoo-dot-us",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "lint": "eslint ./**/*.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/onetoo-dot-us/onetoo-dot-us.github.io.git"
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
-  "author": "Carl 'Cid' Romero",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/onetoo-dot-us/onetoo-dot-us.github.io/issues"
-  },
-  "homepage": "https://github.com/onetoo-dot-us/onetoo-dot-us.github.io#readme",
   "devDependencies": {
-    "eslint": "^8.16.0",
-    "jest": "^27.5.1"
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
   }
 }
