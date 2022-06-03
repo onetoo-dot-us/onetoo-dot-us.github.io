@@ -31,10 +31,10 @@ export default function HomePage() {
         </ul>
       </main>
       {/**
-       * TODO: Create visual representation of the audio creative system using:
+       * TODO: Create Pipeline component, which is a visual representation of the audio creative system and its works-in-progress using:
        *   - Google Drive links to access audio tracks.
        *   - React components to render audio player per audio track.
-       *   - Cipher - "Still Talkin Bout Me" to create proof-of-concept.
+       *   - cipher--still-talkin-bout-me to create proof-of-concept.
        */}
     </div>
   );

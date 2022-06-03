@@ -6,7 +6,7 @@ export const HOME_CONTENT = {
         summary: 'Produce. Reduce. Reuse. Repurpose. Recycle. Consume.',
         audio: {
           produce: {
-            summary: 'Produce audio tracks.',
+            summary: 'Produce one or many audio tracks.',
           },
           reduce: {
             summary: 'Reduce audio tracks to single audio track.',
