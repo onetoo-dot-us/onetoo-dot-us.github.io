@@ -1,40 +1,41 @@
-import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
-import Nav from '../../components/nav/nav.component';
+import React from 'react';
+import { Container, Navbar } from 'react-bootstrap';
 
 export default function HomePage() {
-  const [showsSmallNav, setShowsSmallNav] = useState(false);
-
-  const smallNav = (
-    <>
-      {/* TODO: Render HOME_CONTENT here (for now)-- make it look good. */}
-      <ul>
-        <li>
-          <Link to='listen' onClick={toggleShowsSmallNav}>
-            Audio
-          </Link>
-        </li>
-        <li>Text</li>
-        <li>Video</li>
-      </ul>
-    </>
-  );
-
-  function toggleShowsSmallNav() {
-    setShowsSmallNav(!showsSmallNav);
-  }
-
   return (
-    <>
-      This is the home page.
-      <Nav
-        showsSmallNav={showsSmallNav}
-        smallNav={smallNav}
-        toggleShowsSmallNav={toggleShowsSmallNav}
-      />
+    <div>
+      <header>
+        <Navbar bg='dark' variant='dark'>
+          <Container>
+            <Navbar.Brand>
+              <h1>Onetoo</h1>
+            </Navbar.Brand>
+          </Container>
+        </Navbar>
+      </header>
       <main>
-        <Outlet />
+        <h2>About Onetoo</h2>
+        <aside>Open. Source. Creative. Systems.</aside>
+        <h2>Creative Systems</h2>
+        <aside>Produce. Reduce. Reuse. Repurpose. Recycle. Consume.</aside>
+        <h3>Creative Systems: Audio</h3>
+        <ul>
+          <li>Produce single or many audio tracks.</li>
+          <li>Reduce audio tracks to single audio track.</li>
+          <li>Reuse audio track to produce new audio tracks.</li>
+          <li>
+            Repurpose new audio tracks by reducing to new single audio track.
+          </li>
+          <li>Recycle new single audio track by adding support for looping.</li>
+          <li>Consume single or many audio tracks.</li>
+        </ul>
       </main>
-    </>
+      {/**
+       * TODO: Create visual representation of the audio creative system using:
+       *   - Google Drive links to access audio tracks.
+       *   - React components to render audio player per audio track.
+       *   - Cipher - "Still Talkin Bout Me" to create proof-of-concept.
+       */}
+    </div>
   );
 }
