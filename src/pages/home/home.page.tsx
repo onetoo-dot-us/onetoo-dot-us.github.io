@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import Nav from '../../components/nav/nav.component';
-import Alert from 'react-bootstrap/Alert';
 
 export default function HomePage() {
   const [showsSmallNav, setShowsSmallNav] = useState(false);
 
   const smallNav = (
     <>
-      <Alert>This is the alert.</Alert>
+      {/* TODO: Render HOME_CONTENT here (for now)-- make it look good. */}
       <ul>
         <li>
           <Link to='listen' onClick={toggleShowsSmallNav}>
