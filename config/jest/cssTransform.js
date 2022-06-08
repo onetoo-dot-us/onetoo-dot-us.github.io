@@ -5,7 +5,9 @@
 
 module.exports = {
   process() {
-    return 'module.exports = {};';
+    return {
+      code: 'module.exports = {};',
+    };
   },
   getCacheKey() {
     // the output is always the same.
